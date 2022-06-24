@@ -16,7 +16,6 @@ public class LoginInterceptor implements HandlerInterceptor {
         }else {
             request.setAttribute("msg","请先登录");
             request.getRequestDispatcher("/").forward(request,response);
-
             return  false;
         }
     }

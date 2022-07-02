@@ -20,6 +20,6 @@ public class MyConfigruation implements WebMvcConfigurer {
         InterceptorRegistration interceptorRegistration = registry.addInterceptor(new LoginInterceptor());
         interceptorRegistration.addPathPatterns("/**")
                 .excludePathPatterns("/","/login","/templates/**","/webjars/**",
-                        "/static/**","/css/**","/js/**","/image/**");
+                        "/static/**","/css/**","/js/**","/image/**","/register");
     }
 }

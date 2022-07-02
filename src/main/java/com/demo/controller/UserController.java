@@ -31,7 +31,8 @@ public class UserController {
             return "error";
         }else {
             session.setAttribute("user",user);
-            return "redirect:/information";
+//            return "redirect:/information";
+            return "common";
         }
 
     }
@@ -42,4 +43,8 @@ public class UserController {
         return "information";
     }
 
+    @GetMapping("/register")
+    public String register(){
+        return "register";
+    }
 }
